@@ -1,5 +1,6 @@
 XOURNAL++
 =====================
+[![Join us](https://xournalpp.herokuapp.com/badge.svg)](https://xournalpp.herokuapp.com/)
 
 If you would like to join Xournal++ developement you can join our Slack group:
 <script async defer src="http://https://xournalpp.herokuapp.com/slackin.js?large"></script>
