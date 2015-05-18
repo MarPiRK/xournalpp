@@ -2,7 +2,7 @@ XOURNAL++
 =====================
 
 If you would like to join Xournal++ developement you can join our Slack group:
-<script async defer src="http://slackin.yourhost.com/slackin.js?large"></script>
+<script async defer src="http://https://xournalpp.herokuapp.com/slackin.js?large"></script>
 
 Description
 ---------------------
