@@ -1,10 +1,10 @@
 # Xournal++
 
-If you would like to contribute in Xournal++ developement you can join our Slack group:
+[![Build Status](https://travis-ci.org/xournalpp/xournalpp.svg?branch=string_new)](https://travis-ci.org/xournalpp/xournalpp)
 
-[![Join us](https://xournalpp.herokuapp.com/badge.svg)](https://xournalpp.herokuapp.com/)
+If you would like to contribute in Xournal++ development you can join our Slack group at [xournalpp.slack.com](https://xournalpp.slack.com).
 
-If you prefer not to register on Slack, you can always use our public IRC channel (which btw is integrated with Slack):
+If you prefer not to register on Slack, you can always use our public IRC channel (which is integrated with Slack):
 
 **Server:** irc.geekshed.net:6667
 
@@ -36,8 +36,8 @@ Hopefully you'll enjoy it!
 
 ## Building
 
-Currently it's pretty much the only way to install Xournal++. For complete building documentation refer to wiki page:
-[Instalation](https://github.com/xournalpp/xournalpp/wiki/Installing).
+Aside from legacy releases, this is currently the way to install Xournal++. For complete building documentation refer to wiki page:
+[Installation](https://github.com/xournalpp/xournalpp/wiki/Installing).
 
 There will be some binaries appearing in the future, so ideally you can make use of those as well.
 They'll be at [Xournal++ releases](https://github.com/xournalpp/xournalpp/releases).
@@ -75,4 +75,4 @@ For now branches aren't organized too well, but (currently) the most of developm
 See [Github:xournalpp](http://github.com/xournalpp/xournalpp) for current development (you can invite yourself
 to this group following link on top of this page).
 
-See our [Trello page](https://trello.com/xournalpp) for current roadmap and future developement ideas.
+See our [Trello page](https://trello.com/xournalpp) for current roadmap and future development ideas.

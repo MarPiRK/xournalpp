@@ -186,7 +186,7 @@ int XournalMain::exportPdf(const char* input, const char* output)
 	GFile* file = g_file_new_for_commandline_arg(output);
 
 	PdfExport pdf(doc, NULL);
-	if (!pdf.createPdf(g_file_get_uri(file)))
+	if (!pdf.createPdf(g_file_get_path(file)))
 	{
 		cerr << pdf.getLastError() << endl;
 
@@ -215,10 +215,13 @@ int XournalMain::run(int argc, char* argv[])
 	gchar* pdfFilename = NULL;
 	int openAtPageNumber = -1;
 
+	string pdf_no_compress = _("Don't compress PDF files (for debugging)");
+	string create_pdf = _("PDF output filename");
+	string page_jump = _("Jump to Page (first Page: 1)");
 	GOptionEntry options[] = {
-		{ "pdf-no-compress",   0, 0, G_OPTION_ARG_NONE,           &optNoPdfCompress, _C("Don't compress PDF files (for debugging)"), NULL },
-		{ "create-pdf",      'p', 0, G_OPTION_ARG_FILENAME,       &pdfFilename,      _C("PDF output filename"), NULL },
-		{ "page",            'n', 0, G_OPTION_ARG_INT,            &openAtPageNumber, _C("Jump to Page (first Page: 1)"), "N" },
+		{ "pdf-no-compress",   0, 0, G_OPTION_ARG_NONE,           &optNoPdfCompress, pdf_no_compress.c_str(), NULL },
+		{ "create-pdf",      'p', 0, G_OPTION_ARG_FILENAME,       &pdfFilename,      create_pdf.c_str(), NULL },
+		{ "page",            'n', 0, G_OPTION_ARG_INT,            &openAtPageNumber, page_jump.c_str(), "N" },
 		{G_OPTION_REMAINING,   0, 0, G_OPTION_ARG_FILENAME_ARRAY, &optFilename,      "<input>", NULL},
 		{NULL}
 	};
