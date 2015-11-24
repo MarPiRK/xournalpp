@@ -59,7 +59,6 @@ script:
   - "ctest"
 
 notifications:
-  slack: xournalpp:D5mvotdm0Rnn0ejvZf0FIxgV
   webhooks:
     urls:
       - https://webhooks.gitter.im/e/4879506130dac18d2f63
